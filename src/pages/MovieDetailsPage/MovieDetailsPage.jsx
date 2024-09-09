@@ -11,7 +11,6 @@ export default function MovieDetailsPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
 
-  // const endPoint = `movie/${id}`;
   const location = useLocation();
 
   const backLinkHref = useRef(location.state ?? "/");
@@ -56,8 +55,8 @@ export default function MovieDetailsPage() {
 
   return (
     <main>
-      {loading && <div>Loading</div>}
-      {error && <div>Error</div>}
+      {loading && <div className={css.loading}>Loading</div>}
+      {error && <div className={css.error}>Error</div>}
       {dataFilm.title && <CardOfMovie data={dataFilm} />}
 
       <Link to={backLinkHref.current} className={css.linkGoBack}>
@@ -71,7 +70,7 @@ export default function MovieDetailsPage() {
           <Link to="reviews">Review</Link>
         </li>
       </ul>
-      <Suspense fallback={<div>Loading</div>}>
+      <Suspense fallback={<div className={css.loading}>Loading</div>}>
         <Outlet />
       </Suspense>
     </main>

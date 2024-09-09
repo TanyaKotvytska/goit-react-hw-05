@@ -30,7 +30,7 @@ export default function SearhForm({ onSubmit }) {
     form.reset();
   }
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className={css.formContainer}>
       <input
         className={css.inputsearch}
         type="text"
@@ -38,7 +38,7 @@ export default function SearhForm({ onSubmit }) {
         autoComplete="off"
         placeholder="Movies title"
       />
-      <button type="submit">Search</button>
+      <button type="submit" className={css.btnsearch}>Search</button>
       <ToastContainer />
     </form>
   );

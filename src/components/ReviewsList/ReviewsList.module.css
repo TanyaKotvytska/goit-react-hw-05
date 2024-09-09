@@ -1,8 +1,33 @@
+.reviewList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 .item {
-    margin-bottom: 15px;
-    margin-top: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item p {
+    margin: 5px 0;
+    font-size: 16px;
 }
 
 .span {
-    color: #646cff;
+    font-weight: bold;
+    color: #333;
+}
+
+.item:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.item:hover {
+    background-color: #f1f1f1;
+    border-color: #ccc;
 }

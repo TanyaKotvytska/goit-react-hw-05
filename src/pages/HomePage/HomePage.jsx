@@ -3,6 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import MovieList from "../../components/MovieList/MovieList";
 import fetchData from "../../FetchData";
 import LoadMore from "../../components/LoadMore/LoadMore";
+import css from './HomePage.module.css'
 
 export default function HomePage() {
   const [listFilms, setListFilms] = useState([]);
@@ -50,7 +51,7 @@ export default function HomePage() {
 
   return (
     <main>
-      <h1>Trending today</h1>
+      <h1 className={css.homepagetitle}>Trending today</h1>
       {loading && <div>Loading a list of films</div>}
       {error && (
         <div>Oops... It is error....Please try reloading this page!</div>

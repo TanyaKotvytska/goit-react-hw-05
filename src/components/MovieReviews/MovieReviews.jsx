@@ -9,8 +9,6 @@ export default function MovieReviews() {
   const [error, setError] = useState(false);
   const { id } = useParams();
 
-  // const endPoint = `movie/${id}/reviews`;
-
   useEffect(() => {
     const getReviews = async () => {
       try {

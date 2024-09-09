@@ -24,7 +24,7 @@ export default function CardOfMovie({ data }) {
         }
         alt={`poster of ${title}`}
       />
-      <div>
+      <div className={css.cardContent}>
         <h2>Title: {title}</h2>
         <p className={css.dataMovie}>
           <span className={css.span}>Release date :</span>{" "}

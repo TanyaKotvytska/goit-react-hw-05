@@ -1,4 +1,34 @@
 .listOfFilms {
-    list-style: inside;
-    margin-bottom: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.listOfFilms li {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.listOfFilms li:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.02);
+}
+
+.listOfFilms a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.listOfFilms a:hover {
+    color: #61dafb;
+    text-decoration: underline;
 }

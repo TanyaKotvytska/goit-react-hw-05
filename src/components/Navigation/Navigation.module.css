@@ -1,19 +1,30 @@
+.header {
+    background-color: #282c34;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .navContainer {
     display: flex;
-    gap: 30px;
-    font-size: 20px;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid whitesmoke;
+    justify-content: center;
+    gap: 20px;
 }
 
-.link {
-    padding: 8px;
+.navLink {
+    color: #61dafb;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
 }
 
-.active {
-    border: 1px solid rgb(96, 25, 227);
-    border-radius: 4px;
-    background-color: black;
-    color: red;
+.navLink:hover {
+    color: #21a0f6;
+    transform: scale(1.1);
+}
+
+.navLink.active {
+    color: #ffffff;
+    border-bottom: 2px solid #61dafb;
 }
