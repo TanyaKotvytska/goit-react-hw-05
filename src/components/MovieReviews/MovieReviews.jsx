@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import MovieApi from "../../FetchData";
+import fetchData from "../../FetchData";
 import ReviewsList from "../ReviewsList/ReviewsList";
 
 export default function MovieReviews() {

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import MovieApi from "../../FetchData";
+import fetchData from "../../FetchData";
 import CardOfCast from "../CardOfCast/CardOfCast";
 
 export default function MovieCast() {
@@ -8,7 +8,6 @@ export default function MovieCast() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
   const { id } = useParams();
-  // const endPoint = `movie/${id}/credits`;
 
   useEffect(() => {
     const getCast = async () => {
